@@ -1,0 +1,137 @@
+/* styles.css */
+
+/* Basic body styling */
+body {
+    font-family: 'Quicksand', sans-serif; /* A cute, rounded font */
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #fce4ec, #ffe4e1); /* Soft pink gradient */
+    color: #333;
+}
+
+/* Styling for the main heading */
+h1 {
+    text-align: center;
+    color: #ff69b4; /* Bubblegum pink */
+    font-size: 3rem;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 8px rgba(255, 182, 193, 0.5); /* Soft shadow for text */
+}
+
+/* Container for each book review */
+.review {
+    background: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px; /* More rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: flex-start;
+    max-width: 800px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative; /* Allows for decorative elements */
+}
+
+/* Hover effect for the review container */
+.review:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the book cover image */
+.review img {
+    max-width: 120px;
+    margin-right: 20px;
+    border-radius: 15px; /* Rounded image corners */
+    border: 4px solid #ffb6c1; /* Light pink border */
+    flex-shrink: 0;
+}
+
+/* Styling for the content inside the review container */
+.review div {
+    h2 {
+        margin-top: 0;
+        font-size: 1.8rem;
+        color: #ff69b4; /* Bubblegum pink for headings */
+        position: relative;
+    }
+
+    p {
+        margin: 5px 0;
+        line-height: 1.6;
+        color: #555;
+    }
+
+    p strong {
+        color: #ff69b4; /* Pink for emphasis */
+    }
+
+    .rating {
+        margin-top: 10px;
+        font-size: 1.2rem;
+        color: #ffb6c1; /* Light pink for stars */
+        animation: sparkle 1s infinite; /* Cute sparkle effect */
+    }
+}
+
+/* Decorative elements (hearts) */
+.review h2::before {
+    content: "💖";
+    position: absolute;
+    left: -30px;
+    top: 0;
+    font-size: 1.5rem;
+}
+
+.review::before, .review::after {
+    content: "💖";
+    position: absolute;
+    font-size: 2rem;
+    opacity: 0.6;
+    animation: float 3s ease-in-out infinite;
+}
+
+.review::before {
+    top: -10px;
+    right: -10px;
+    animation-delay: 0s;
+}
+
+.review::after {
+    bottom: -10px;
+    left: -10px;
+    animation-delay: 1s;
+}
+
+/* Keyframes for animations */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes sparkle {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 600px) {
+    .review {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .review img {
+        max-width: 100px;
+        margin-bottom: 15px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .review h2 {
+        font-size: 1.6rem;
+    }
+}
