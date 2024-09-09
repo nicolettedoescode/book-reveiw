@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicolette's Book Reviews</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Nicolette's Book Reviews </h1>
+    </header>
+
+  <!-- Review for Klara and the Sun -->
+  <div class="review">
+      <img src="images/klaraetlesoleil" alt="Klara et le soleil Cover">
+      <div>
+          <h2>Klara et le soleil</h2>
+          <p><strong>Author:</strong> Kazuo Ishiguro</p>
+          <p><strong>Rating:</strong> 3/5 stars</p>
+          <p><strong>Review:</strong> This is my current read. I read this in French and have been reading it on and off during how busy adult life is now. I’m not sure if it’s that attention-grabbing. This is a dystopia, and it’s quite a slow read, which is why I’m rating it 3 out of 5. I don’t think I’d read it again, even though it is literally my favorite genre. But it was fun to read a Japanese author (who grew up in London) in French, so at least there’s that. I haven’t finished it yet and I keep tabbing the book, but I found it really boring at times. For example, it takes a while for the book to develop and get Klara out of the shop window. I appreciate that the book is incremental in that sense, but please, why isn’t there more progression? Anyway, I will finish this, but as of now, it’s looking like I wouldn’t pick it up again, which is unfortunate. I think I like it a little more because I read it in French, but this reason alone isn’t deserving of stars. It’s a shame, as I do love slow reads, but for me, this was snail-paced slow and I wanted to literally skip pages. Even if you do skip pages, it doesn’t really skip enough and you literally don’t miss much. Anyways I think the premise is really interesting with the rise in ai but, i think for me i like reading about dystopias without technology, i dislike modernity, to some extent, when i read and so the fact the main character is a literal robot is a little bit of a turn off for me to say the least. Anyways i think the background of the book is overall interesting and so i have tagged it here in the following toggle. Not sure if this book is for everyone , but its quite short, even if at times it feels like its longer. Actually, upon doing a little research, I dont think my opinion is too different for many. According to The New York Times, Klara and the Sun is described as "an emotional and introspective novel that struggles to fully engage with its ambitious themes," while The Guardian notes that, despite offering a "thoughtful and delicately crafted narrative," the book can feel slow and ponderous, with pacing and plot development that may not satisfy all readers. Clearly I think this guy missed the mark. Like, by a lot, which is harsh to realise. Contrastingly, The New York Times praises Klara and the Sun for its "beautifully crafted, meditative narrative that explores profound themes of consciousness and artificial intelligence," noting Ishiguro's talent for crafting a poignant and thought-provoking story that deeply engages readers. How sorrowfully wrong that is. Anyways the message is there, but for me, id never read this again and ill update this review when i finish it.</p>
+
+          <!-- Toggle for Citations -->
+          <button class="toggle-button" onclick="toggleContent('Additional Infroamtion', this)">Additional Infromation</button>
+          <div id="Additional Infroamtion" class="toggle-content" style="display: none;">
+            <p>Kazuo Ishiguro, a British novelist born in Japan, is celebrated for his exploration of memory, identity, and technology. Known for works like The Remains of the Day and Never Let Me Go, Ishiguro’s latest novel, Klara and the Sun (2021), delves into the world of artificial intelligence. Set in a future where AI plays a significant role in human life, the story follows Klara, an AI robot designed to be a child's companion. Ishiguro was inspired by the rapid advancements in technology and their impact on human emotions and relationships. The novel examines themes of AI consciousness, loneliness, and social inequality, reflecting Ishiguro’s fascination with how technology intersects with human experience. The book has been praised for its insightful and emotional exploration of these themes.</p>
+              <p><strong>Hannah Arendt Quotes:</strong> “The most radical revolutionary will become a conservative the day after the revolution” (Goodreads)</p>
+              <p><strong>Aldous Huxley Quotes:</strong> “The most important function of a society is to make its members feel at home” (Goodreads)</p>
+              <p><strong>Margaret Atwood Interview:</strong> Discussion on The Handmaid’s Tale not being a feminist critique (The Guardian)</p>
+              <p><strong>Camille Paglia Critique:</strong> “Atwood’s dystopia is a powerful allegory, but it risks descending into the melodramatic” (The New York Times)</p>
+          </div>
+      </div>
+  </div>
+
+  <script>
+  function toggleContent(id, button) {
+      var content = document.getElementById(id);
+      var isVisible = content.style.display === 'block';
+
+      content.style.display = isVisible ? 'none' : 'block';
+  }
+  </script>
+
+    <!-- HTML for the Book Review -->
+    <div class="review">
+        <img src="images/cat'seye" alt="Cat's Eye Cover">
+        <div>
+            <h2>Cat's Eye</h2>
+            <p><strong>Author:</strong> Margaret Atwood</p>
+            <p class="rating">⭐⭐⭐⭐</p>
+            <p><strong>Review:</strong> “A great book should leave you with many experiences, and slightly exhausted at the end,” said Mark Haddon, and Cat’s Eye left me both mentally stimulated and emotionally resonant by the end of it. However, it was just that, a great book, not a brilliant one. I read this on the train during the summer while I worked a summer job. Every time I took the District Line to Gloucester Road for work, I would read, even during my breaks on shift. I found it interesting and didn’t expect it to resonate as much as it did reading it as a teenager on the train, but somehow it felt more relatable than I anticipated. I got through the book super quickly, and although it is quite dense, it didn’t feel overwhelming. I am rating it 4 out of 5, mainly because I think The Handmaid’s Tale by the same author is unbeatable and superior. Largely, I find the book’s message a little more forgettable. Although the message was tangible, it felt, to some degree, more like a storybook than anything else. This might be the point, but the message seems somewhat diminished and perhaps comes across as less significant.</p>
+            <button class="toggle-summary" onclick="toggleContent('summary')">Show/Hide Summary</button>
+            <div id="summary" class="toggle-content">
+                <h3>Summary:</h3>
+                <p>Cat's Eye takes readers on a riveting journey through the life of Elaine Risley, a painter whose past is haunted by a complex and toxic friendship.</p>
+                <p><strong>Childhood:</strong> Elaine's early years are colored by her sensitivity and imagination, but they quickly turn dark with the arrival of Cordelia, a friend whose manipulative and cruel behavior deeply affects her. This period is marked by Elaine's isolation at school and her retreat into art as a refuge from Cordelia’s bullying.</p>
+                <p><strong>Adolescence:</strong> As Elaine grows, her relationship with Cordelia becomes increasingly toxic. Cordelia’s domination and psychological torment leave lasting scars, impacting Elaine’s self-esteem and social interactions. Despite these struggles, Elaine’s artistic talent begins to flourish, providing her a way to express and cope with her turbulent emotions.</p>
+                <p><strong>Adulthood:</strong> Elaine emerges as a successful painter, but the ghosts of her past still linger. Her career retrospective prompts a deep dive into her painful memories with Cordelia. This period is marked by personal growth and attempts to reconcile with her past, even as her relationships and sense of self remain influenced by her childhood trauma.</p>
+                <p><strong>Old Age:</strong> In her later years, Elaine reflects on her life with a mixture of regret and acceptance. Her retrospective exhibition becomes a form of reconciliation, allowing her to confront and understand her past. Through her art, she seeks closure, ultimately gaining a nuanced perspective on her life and the impact of her past relationships.</p>
+                <p>Margaret Atwood’s Cat's Eye is a poignant exploration of how childhood trauma can echo through adulthood, brilliantly capturing the intricacies of personal growth and artistic expression. Elaine’s journey is both heartbreaking and inspiring, illustrating the enduring effects of our formative experiences and the power of art to heal and reflect.</p>
+            </div>
+            <button class="toggle-citations" onclick="toggleContent('citations')">Show/Hide Citations</button>
+            <div id="citations" class="toggle-content">
+                <h3>Citations:</h3>
+                <p><strong>Laura Miller's Review on Slate:</strong> "Atwood’s portrait of the female psyche is both delicate and incisive, showing how the past continues to shadow the present."<br><a href="https://slate.com" target="_blank">Read more on Slate</a></p>
+                <p><strong>Susan Faludi's Review on The New York Times:</strong> "The novel’s intense focus on personal pain sometimes detracts from a broader social critique."<br><a href="https://nytimes.com" target="_blank">Read more on The New York Times</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for toggling content -->
+    <script>
+        function toggleContent(id) {
+            var content = document.getElementById(id);
+            var button = document.querySelector(`.toggle-${id}`);
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+                button.textContent = 'Hide ' + id.charAt(0).toUpperCase() + id.slice(1);
+            } else {
+                content.style.display = 'none';
+                button.textContent = 'Show ' + id.charAt(0).toUpperCase() + id.slice(1);
+            }
+        }
+    </script>
+
+    <!-- HTML for the 48 Laws of Power Review -->
+    <div class="review">
+        <img src="images/48rulesoflaw" alt="48 Laws of Power Cover">
+        <div>
+            <h2>48 Laws Of Power</h2>
+            <p><strong>Author:</strong> Robert Greene</p>
+            <p class="rating">⭐⭐⭐⭐⭐</p>
+            <p><strong>Review:</strong>
+                George Orwell says, “Power is in tearing human minds to pieces and putting them together again in new shapes of your own choosing.” This book was just a very interesting read overall. I think the overall message can be taken too far but this book isn't getting anything less than a 5/5 because of how accurate this was to real world scenarios. This is something I think everyone should read, even if it, at times, is a hard read (in terms of how accurate the laws are thus, is difficult to comprehend that people actually are like this).  Anyways, I've added a summary of the laws here, use at your own risk.
+            </p>
+
+            <!-- Toggle for Overview -->
+            <button class="toggle-button" onclick="toggleOverview()">Show/Hide Overview</button>
+            <div id="overview" class="toggle-content">
+                <p>Fundamentally, this book elucidates methods for manipulating individuals or avoiding manipulation. In the most constructive sense, it advocates the principle of "if you cannot surpass them, align with them." Remarkably, I would rate this highly, as it is directly applicable to real-world scenarios. The text is meticulously structured into 48 distinct sections, facilitating ease of comprehension.</p>
+                <p>Additionally, Greene integrates historical anecdotes with an in-depth exploration of human psychology, analyzing the motivations, fears, and desires that underpin human behavior. The intersection of historical context and contemporary psychological insight is particularly compelling, revealing enduring patterns of power dynamics. Although drawing on specific historical situations that may not translate well to contemporary scenarios, it is arguable that some tactics, if not all, don’t lose meaning or strategy even today.</p>
+                <p>A significant takeaway is Greene’s guidance on navigating intricate social environments, which could prove exceptionally valuable in professional settings as well as in managing overall reticence. The book further underscores the critical importance of strategic thinking and long-term planning—essential elements for the attainment of sustained goals. Despite the favorable review, it is imperative to recognize the ethical implications of the book, given that its advice often promotes self-serving and manipulative strategies.</p>
+                <p>However, The 48 Laws of Power doesn’t come without considerable debate. Plato highlights that “those who seek power are often those least suited to wield it,” pointing out the red flag regarding an individual’s suitability to hold power, which isn't alluded to in this book. Readers should approach this text with a discerning perspective as well as consider the ethical ramifications of employing these principles since, ultimately, the book advocates for manipulation where it benefits you. Ultimately, however, one is free to act according to their own judgment. As Niccolò Machiavelli (from The Prince) highlights, “the ends justify the means,” which, similar to Greene, reflects the pragmatic approach to power and manipulation.</p>
+            </div>
+
+            <!-- Toggle for Key Takeaways -->
+            <button class="toggle-button" onclick="toggleKeyTakeaways()">Show/Hide Key Takeaways</button>
+            <div id="key-takeaways" class="toggle-content">
+                <h3>Key Takeaways:</h3>
+                <div class="law">
+                    <p><strong>1. Never Outshine the Master:</strong> Make those above you feel superior.</p>
+                    <p><strong>2. Never Put Too Much Trust in Friends, Learn How to Use Enemies:</strong> Be cautious of friends who may become envious.</p>
+                    <p><strong>3. Conceal Your Intentions:</strong> Keep your plans secret to maintain an advantage.</p>
+                    <p><strong>4. Always Say Less Than Necessary:</strong> Speaking less can make you appear more powerful.</p>
+                    <p><strong>5. So Much Depends on Reputation – Guard It with Your Life:</strong> Protect and build your reputation.</p>
+                    <p><strong>6. Court Attention at All Costs:</strong> Stand out and attract attention to gain influence.</p>
+                    <p><strong>7. Get Others to Do the Work for You, but Always Take the Credit:</strong> Utilize others' skills and ideas to your advantage.</p>
+                    <p><strong>8. Make Other People Come to You – Use Bait if Necessary:</strong> Create a situation where others need you.</p>
+                    <p><strong>9. Win Through Your Actions, Never Through Argument:</strong> Demonstrate your abilities through actions rather than words.</p>
+                    <p><strong>10. Infection: Avoid the Unhappy and Unlucky:</strong> Distance yourself from those who bring negativity or misfortune.</p>
+                    <p><strong>11. Learn to Keep People Dependent on You:</strong> Make others rely on you to maintain your influence.</p>
+                    <p><strong>12. Use Selective Honesty and Generosity to Disarm Your Victim:</strong> Use honesty and generosity strategically to gain trust.</p>
+                    <p><strong>13. When Asking for Help, Appeal to People’s Self-Interest, Never to Their Mercy or Gratitude:</strong> Frame requests in a way that benefits the other person.</p>
+                    <p><strong>14. Pose as a Friend, Work as a Spy:</strong> Gather information to use to your advantage.</p>
+                    <p><strong>15. Crush Your Enemy Totally:</strong> Ensure your adversaries are completely defeated.</p>
+                    <p><strong>16. Use Absence to Increase Respect and Honor:</strong> Periodic absence can increase your value.</p>
+                    <p><strong>17. Keep Others in Suspended Terror: Cultivate an Air of Unpredictability:</strong> Be unpredictable to keep others off balance.</p>
+                    <p><strong>18. Do Not Build Fortresses to Protect Yourself – Isolation is Dangerous:</strong> Engage with others to stay informed and connected.</p>
+                    <p><strong>19. Know Who You’re Dealing With – Do Not Offend the Wrong Person:</strong> Be aware of others' power and influence.</p>
+                    <p><strong>20. Do Not Commit to Anyone:</strong> Remain non-committal to maintain your freedom and control.</p>
+                    <p><strong>21. Play a Sucker to Catch a Sucker – Seem Dumber Than Your Mark:</strong> Appear less intelligent to deceive others.</p>
+                    <p><strong>22. Use the Surrender Tactic: Transform Weakness into Power:</strong> Use strategic retreat to gain an advantage.</p>
+                    <p><strong>23. Concentrate Your Forces:</strong> Focus your efforts and resources on a single objective.</p>
+                    <p><strong>24. Play the Perfect Courtier:</strong> Navigate social dynamics to gain favor and influence.</p>
+                    <p><strong>25. Re-Create Yourself:</strong> Reinvent yourself to adapt and thrive.</p>
+                    <p><strong>26. Keep Your Hands Clean:</strong> Avoid being directly associated with controversial actions.</p>
+                    <p><strong>27. Play on People’s Need to Believe to Create a Cult-like Following:</strong> Use others' desires and beliefs to build loyalty.</p>
+                    <p><strong>28. Enter Action with Boldness:</strong> Take decisive action to project confidence.</p>
+                    <p><strong>29. Plan All the Way to the End:</strong> Think through every aspect of your plan to avoid unforeseen obstacles.</p>
+                    <p><strong>30. Make Your Accomplishments Seem Effortless:</strong> Conceal the hard work behind your achievements.</p>
+                    <p><strong>31. Control the Options: Get Others to Play with the Cards You Deal:</strong> Limit choices to steer outcomes in your favor.</p>
+                    <p><strong>32. Play to People’s Fantasies:</strong> Use others' dreams and desires to manipulate them.</p>
+                    <p><strong>33. Discover Each Man’s Thumbscrew:</strong> Find and exploit others' vulnerabilities.</p>
+                    <p><strong>34. Be Royal in Your Own Fashion: Act Like a King to Be Treated Like One:</strong> Carry yourself with confidence and dignity.</p>
+                    <p><strong>35. Master the Art of Timing:</strong> Know when to act and when to wait.</p>
+                    <p><strong>36. Disdain Things You Cannot Have: Ignoring Them is the Best Revenge:</strong> Dismiss what you cannot obtain to diminish its value.</p>
+                    <p><strong>37. Create Compelling Spectacles:</strong> Use dramatic events to capture attention.</p>
+                    <p><strong>38. Think as You Like but Behave Like Others:</strong> Conform outwardly while maintaining your own thoughts and values.</p>
+                    <p><strong>39. Stir Up Waters to Catch Fish:</strong> Create confusion to exploit opportunities.</p>
+                    <p><strong>40. Despise the Free Lunch:</strong> Value what you pay for and avoid relying on free offers.</p>
+                    <p><strong>41. Avoid Stepping into a Great Man’s Shoes:</strong> Establish your own identity rather than following in another's footsteps.</p>
+                    <p><strong>42. Strike the Shepherd and the Sheep Will Scatter:</strong> Remove the leader to disrupt the group.</p>
+                    <p><strong>43. Work on the Hearts and Minds of Others:</strong> Influence emotions and thoughts to gain support.</p>
+                    <p><strong>44. Disarm and Infuriate with the Mirror Effect:</strong> Reflect others' actions to unsettle them.</p>
+                    <p><strong>45. Preach the Need for Change, but Never Reform Too Much at Once:</strong> Advocate gradual change to avoid resistance.</p>
+                    <p><strong>46. Never Appear Too Perfect:</strong> Display minor flaws to avoid envy.</p>
+                    <p><strong>47. Do Not Go Past the Mark You Aimed For; In Victory, Learn When to Stop:</strong> Know when to stop and avoid overreaching.</p>
+                    <p><strong>48. Assume Formlessness:</strong> Adapt and remain flexible to avoid being predictable.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for Toggle Functionality -->
+    <script>
+    function toggleOverview() {
+        var content = document.getElementById("overview");
+        content.style.display = content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleKeyTakeaways() {
+        var content = document.getElementById("key-takeaways");
+        content.style.display = content.style.display === "none" ? "block" : "none";
+    }
+    </script>
+
+    </div>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Reviews</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file -->
+    <style>
+        .citations {
+            display: none;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        .toggle-citations {
+            cursor: pointer;
+            color: #007BFF;
+            text-decoration: underline;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+  <!-- HTML for The Handmaid's Tale Review -->
+  <div class="reviews-container">
+    <div class="review">
+        <img src="images/thehandmaidstale" alt="The Handmaid's Tale Cover">
+        <div class="review-details">
+            <h2>The Handmaid's Tale</h2>
+            <p><strong>Author:</strong> Margaret Atwood</p>
+            <p class="rating">⭐⭐⭐⭐⭐</p>
+            <p><strong>Review:</strong> “Books are a uniquely portable magic,” as Stephen King famously said. It is thus not surprising that the magic of The Handmaid's Tale has enchanted me repeatedly, making it a book I have returned to again and again. I first read The Handmaid's Tale in Year 12 and 13, and I must have gone through it at least five times because it was just so gripping. Its 2024 and every time I re-read it, I discovered something new that I hadn't noticed before, which made me appreciate it even more. I've just had to add it to my book reviews literally because it is my favourite book and I haven't ever re-read a book more than this one. Even now, it has remained one of my genuine favs, and even during lockdown, when I was reading other books, I kept coming back to it. I was obsessssedd. I remember staying up all night the first time I read it, just to find out what happened next. This book really piqued my interest in Margaret Atwood's other works and sparked a love for the dystopian genre, alongside romance. Although my classmates weren’t into this genre, I really enjoyed it and the A-level module. I’ve continued to re-read it even after graduating, and my copy is now so worn out from all the annotations and notes that the spine is practically falling apart.</p>
+
+            <!-- Toggle for Detailed Review and Citations -->
+    <button class="toggle-button" onclick="toggleContent('detailed-review', this)">Show Detailed Review</button>
+    <div id="detailed-review" class="toggle-content" style="display: none;">
+        <p>Margaret Atwood’s The Handmaid’s Tale is a profound and unsettling exploration of dystopian fiction that delves into themes of authoritarianism and gender subjugation. Published in 1985, the novel is set in the theocratic Republic of Gilead, where women are systematically stripped of their rights and reduced to their reproductive functions. Through the experiences of Offred, a Handmaid who bears children for the elite, Atwood presents a scathing critique of totalitarian regimes and patriarchal control.</p>
+        <p>Atwood’s depiction of Gilead’s oppressive society aligns with Hannah Arendt’s observation that “The most radical revolutionary will become a conservative the day after the revolution” (Goodreads). In Gilead, revolutionary ideals have ossified into a rigid, oppressive regime where the pursuit of ideological purity has led to the suppression of individual freedoms. Offred’s reflections on her past life juxtapose her current state of entrapment, illustrating a poignant loss of personal identity and autonomy.</p>
+        <p>The novel’s thematic exploration resonates with Aldous Huxley’s assertion, “The most important function of a society is to make its members feel at home” (Goodreads). In Gilead, the societal structure is designed to make its citizens feel perpetually alienated and controlled, stripping them of their ability to forge meaningful connections and identities. Atwood’s narrative reveals the harrowing impact of such a society on the human psyche.</p>
+        <p>In various interviews, Margaret Atwood has emphasized that The Handmaid’s Tale is not intended as a feminist critique but rather a speculative exploration of power and control. She has stated that the novel reflects her concerns about the potential for authoritarianism to emerge from various socio-political contexts, rather than specifically addressing feminist issues (The Guardian). According to Atwood, the book is a cautionary tale about the fragility of individual rights and freedoms in the face of oppressive ideologies. However, I think it’s quite clear that there is deeply rooted feminist inspiration, although it is also true that most of the inspiration that she has pulled or been influenced by has either entirely come from previous/recent history or a caricature of real-world events, which all the more makes the message more potent than anything else. I find the book increasingly compelling with each re-reading. Even decades after its publication, it appears almost impervious to the ravages of time, with its message retaining a profound relevance irrespective of the era in which it is read.</p>
+        <p>It must, however, also be noted that the novel has faced critique for its portrayal of Gilead as a somewhat exaggerated dystopia. Critic Camille Paglia argues that “Atwood’s dystopia is a powerful allegory, but it risks descending into the melodramatic” (The New York Times). This perspective suggests that the novel’s extreme depiction of a theocratic regime may undermine its immediate relevance and practical applicability.</p>
+        <p>In summary, The Handmaid’s Tale remains a compelling and thought-provoking work that offers a critical examination of power dynamics and gender oppression. Atwood’s portrayal of Gilead’s theocratic regime, while subject to critique for its extremity and focus on Offred, provides a powerful reflection on the dangers of authoritarianism and the erosion of personal freedoms. As Atwood herself has emphasized, the novel serves not as a feminist critique but as a cautionary tale about the fragility of individual rights in the face of ideological extremism.</p>
+
+        <p><strong>Hannah Arendt Quotes:</strong> “The most radical revolutionary will become a conservative the day after the revolution” (Goodreads)</p>
+        <p><strong>Aldous Huxley Quotes:</strong> “The most important function of a society is to make its members feel at home” (Goodreads)</p>
+        <p><strong>Margaret Atwood Interview:</strong> Discussion on The Handmaid’s Tale not being a feminist critique (The Guardian)</p>
+        <p><strong>Camille Paglia Critique:</strong> “Atwood’s dystopia is a powerful allegory, but it risks descending into the melodramatic” (The New York Times)</p>
+    </div>
+
+
+    <script>
+    function toggleContent(id, button) {
+        var content = document.getElementById(id);
+        var isVisible = content.style.display === 'block';
+
+        content.style.display = isVisible ? 'none' : 'block';
+        button.textContent = isVisible ? 'Show ' + (id === 'detailed-review' ? 'Detailed Review' : 'Citations') : 'Hide ' + (id === 'detailed-review' ? 'Detailed Review' : 'Citations');
+    }
+    </script>
+
+
+</body>
+</html>
+
+
+    <script>
+        function toggleLaws() {
+            var laws = document.querySelector('.law');
+            var button = document.querySelector('.law-button');
+            if (laws.style.display === 'none') {
+                laws.style.display = 'block';
+                button.textContent = 'Hide Laws';
+            } else {
+                laws.style.display = 'none';
+                button.textContent = 'Show Laws';
+            }
+        }
+    </script>
+</body>
+</html>
