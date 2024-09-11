@@ -12,6 +12,69 @@
     </header>
 
 
+    <!-- HTML for the Book Review -->
+  <div class="review">
+      <img src="images/christinapoems" alt="Christina Rossetti: Selected Poems Cover">
+      <div>
+          <h2>Christina Rossetti: Selected Poems</h2>
+          <p><strong>Author:</strong> Christina Rossetti</p>
+            <p class="rating">⭐⭐⭐⭐</p>
+          <p><strong>Review:</strong> This was a decent selection of poems. I read these during lockdown during A-levels and came back to this recently. No, I didn't read them all, but I'll add two poems I enjoyed here. There's a lot of imagery and meaning, although some poems are better than others, which is expected when looking at poems. This is a good example of a woman who wrote a selection of poems while she was in her feelings, so a lot of the poems are about romance and love, which I really like.</p>
+
+
+          <!-- Tab Structure for the Toggle Feature (Inside the Review Section) -->
+          <div class="tab">
+              <button class="tablinks" onclick="openTab(event, 'IfOnly')">If Only</button>
+              <button class="tablinks" onclick="openTab(event, 'IfIWereAQueen')">If I Were A Queen</button>
+          </div>
+
+          <div id="IfOnly" class="tabcontent">
+              <h3>If Only</h3>
+              <p>If I might only love my God and die!<br>
+                 But now He bids me love Him and live on,<br>
+                 Now when the bloom of all my life is gone,<br>
+                 The pleasant half of life has quite gone by.<br>
+                 My tree of hope is lopped that spread so high,<br>
+                 And I forget how summer glowed and shone,<br>
+                 While autumn grips me with its fingers wan<br>
+                 And frets me with its fitful windy sigh.<br>
+                 When autumn passes then must winter numb,<br>
+                 And winter may not pass a weary while,<br>
+                 But when it passes spring shall flower again;<br>
+                 And in that spring who weepeth now shall smile,<br>
+                 Yea, they shall wax who now are on the wane,<br>
+                 Yea, they shall sing for love when Christ shall come.</p>
+          </div>
+
+          <div id="IfIWereAQueen" class="tabcontent">
+              <h3>If I Were A Queen</h3>
+              <p>If I were a Queen,<br>
+                 What would I do?<br>
+                 I’d make you King,<br>
+                 And I’d wait on you.<br><br>
+                 If I were a King,<br>
+                 What would I do?<br>
+                 I’d make you Queen,<br>
+                 For I’d marry you.</p>
+          </div>
+      </div>
+  </div>
+
+  <script>
+  function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+  }
+  </script>
 
 
     <div class="review">
@@ -474,9 +537,16 @@
           <h2>Klara et le soleil</h2>
           <p><strong>Author:</strong> Kazuo Ishiguro</p>
           <p class="rating">⭐⭐⭐</p>
-          <p><strong>Review:</strong> This is my current read. I read this in French and have been reading it on and off during how busy adult life is now. I’m not sure if it’s that attention-grabbing. This is a dystopia, and it’s quite a slow read, which is why I’m rating it 3 out of 5. I don’t think I’d read it again, even though it is literally my favorite genre. But it was fun to read a Japanese author (who grew up in London) in French, so at least there’s that. I haven’t finished it yet and I keep tabbing the book, but I found it really boring at times. For example, it takes a while for the book to develop and get Klara out of the shop window. I appreciate that the book is incremental in that sense, but please, why isn’t there more progression? Anyway, I will finish this, but as of now, it’s looking like I wouldn’t pick it up again, which is unfortunate. I think I like it a little more because I read it in French, but this reason alone isn’t deserving of stars. It’s a shame, as I do love slow reads, but for me, this was snail-paced slow and I wanted to literally skip pages. Even if you do skip pages, it doesn’t really skip enough and you literally don’t miss much. Anyways I think the premise is really interesting with the rise in AI but, I think for me I like reading about dystopias without technology, I dislike modernity to some extent, when I read and so the fact the main character is a literal robot is a little bit of a turn off for me to say the least.</p>
-          <p>Anyways I think the background of the book is overall interesting and so I have tagged it here in the following toggle. Not sure if this book is for everyone, but it's quite short, even if at times it feels like it’s longer. Actually, upon doing a little research, I don’t think my opinion is too different from many. According to The New York Times, Klara and the Sun is described as "an emotional and introspective novel that struggles to fully engage with its ambitious themes," while The Guardian notes that, despite offering a "thoughtful and delicately crafted narrative," the book can feel slow and ponderous, with pacing and plot development that may not satisfy all readers. Clearly, I think this guy missed the mark. Like, by a lot, which is harsh to realize. Contrastingly, The New York Times praises Klara and the Sun for its "beautifully crafted, meditative narrative that explores profound themes of consciousness and artificial intelligence," noting Ishiguro's talent for crafting a poignant and thought-provoking story that deeply engages readers. How sorrowfully wrong that is. Anyways the message is there, but for me, I’d never read this again and I’ll update this review when I finish it.</p>
+          <p><strong>Review:</strong> <p>This is my current read, and I’ve been going through it in French, dipping in and out amidst the demands of busy adult life. Unfortunately, it hasn’t quite captured my attention. As a dystopian novel, it’s surprisingly slow-paced, which is why I’m rating it 3 out of 5. Despite dystopia being my favorite genre, I don’t see myself revisiting this book. However, the experience of reading a Japanese author (who grew up in London) in French was enjoyable, so there’s some merit there. Literally all the story is about so far is a robot who is powered by the sun waiting to be sold and, eventually, is. I don’t know what happens after because I haven't read that far.</p>
 
+        <p>I haven’t finished the book yet, and I’ve been tabbing it as I go, but there are moments where I found it incredibly boring. For instance, it takes an inordinate amount of time for the plot to develop and for Klara to finally leave the shop window. While I can appreciate the book’s incremental approach, I can’t help but wonder why there isn’t more progression. Nevertheless, I intend to finish it, but at this point, it’s unlikely I’ll want to pick it up again, which is unfortunate. The fact that I’m reading it in French adds a slight appeal, but that alone doesn’t justify a higher rating.</p>
+
+        <p>As much as I enjoy slow reads, this one felt excruciatingly slow, to the point where I was tempted to skip pages. Even if you do skip ahead, you don’t miss much, which is telling. The premise, particularly the rise in AI, is intriguing, but I find myself more drawn to dystopias that don’t rely on technology. I have a certain aversion to modernity when reading, and the fact that the main character is a literal robot is somewhat off-putting, to say the least.</p>
+
+        <p>The background and setting of the book are interesting, and I’ve tagged it here in the following toggle. It’s not a book for everyone, though it’s quite short, even if it sometimes feels longer because it’s so dense. So don’t be fooled by how short the book is; it will take a while to read. Interestingly, after doing some research, I realized my opinion aligns with many others. According to The New York Times, *Klara and the Sun* is described as "an emotional and introspective novel that struggles to fully engage with its ambitious themes," while *The Guardian* notes that, despite offering a "thoughtful and delicately crafted narrative," the book can feel slow and ponderous, with pacing and plot development that may not satisfy all readers. It’s disappointing to admit, but I think the author missed the mark, significantly so.</p>
+
+        <p>In contrast, *The New York Times* praises *Klara and the Sun* for its "beautifully crafted, meditative narrative that explores profound themes of consciousness and artificial intelligence," highlighting Ishiguro’s talent for creating a poignant and thought-provoking story that deeply engages readers. I find myself disagreeing with this assessment. The message is present, but it’s not enough for me to consider reading this book again. I’ll update this review once I’ve finished it.</p>
+       
           <!-- Expandable Additional Information Section -->
           <div class="expandable">
               <h3 onclick="toggleExpand(this)">+ Show Additional Information</h3>
@@ -504,8 +574,19 @@
           <h2>Cat's Eye</h2>
           <p><strong>Author:</strong> Margaret Atwood</p>
           <p class="rating">⭐⭐⭐⭐</p>
-          <p><strong>Review:</strong> “A great book should leave you with many experiences, and slightly exhausted at the end,” said Mark Haddon, and Cat’s Eye left me both mentally stimulated and emotionally resonant by the end of it. However, it was just that, a great book, not a brilliant one. To fully grasp the essence of this book, it's important to recognize that its structure is divided into distinct phases of life—childhood, adolescence, adulthood, and so on. Reading it felt like experiencing an entirely separate existence, as though I had entered a different dimension or reality. When I reached the end, it felt as though the journey had passed in an instant, which may be an intentional reflection of how swiftly life can slip by—a metaphor that resonates deeply with the fleeting nature of time, even if not done intentionally. I read this on the train during the summer while I worked a summer job. Every time I took the District Line to Gloucester Road for work, I would read, even during my breaks on shift. I found it interesting and didn’t expect it to resonate as much as it did reading it as a teenager on the train, but somehow it felt more relatable than I anticipated. I got through the book super quickly, and although it is quite dense, it didn’t feel overwhelming. I am rating it 4 out of 5, mainly because I think The Handmaid’s Tale by the same author is unbeatable and superior. Largely, I find the book’s message a little more forgettable. Although the message was tangible, it felt, to some degree, more like a storybook than anything else. This might be the point, but the message seems somewhat diminished and perhaps comes across as less significant.</p>
+          <p><strong>Review:</strong>
+           “A great book should leave you with many experiences and slightly exhausted at the end,” said Mark Haddon, and *Cat’s Eye* left me both mentally stimulated and emotionally exhausted by the end, which isn’t a horrible lasting effect, honestly. It shows the story was decent and made me feel something. However, it was just that—a great book, not a brilliant one. Reading it, theres just an undertone of sadness most of the way through, and the ending isnt satisying by any means since she never reallyyy gets emotional closure.
 
+           <p>If you choose to read this, the first thing you need to fully understand is that the book's structure is subdivided into distinct phases of life—childhood, adolescence, adulthood, and so on. So, literally, you are reading the progression of the fictional life of the main character. Hence, when you finish the book, it feels like you’ve led a whole different life. Honestly, that’s what’s done really well, I think. Also, it felt like the book went really quickly, which might have something to do with how hooked I was reading this on breaks and literally anywhere I was. But, done intentionally or not, the effect could be taken as somewhat metaphorical; a reflection of how quickly time can slip away.</p>
+
+           <p>It felt like the character's story came to an end when i eventually finished the book, and there was nothing more to tell, which, not going to lie, was disappointing, although not hugely. Genuinely, it made me appreciate life more because, to some degree, the main character seems to have gone through her life in an almost wasteful way emotionally, and I didn’t feel like she accomplished that much in her life. So the reflection of being emotionally drained at the end could be accurate even if the story emotionally isn’t a rollercoaster. But, it’s a weird feeling because she actually did accomplish a few things with her art at the end, so I’m not sure why I felt like that. Perhaps it’s the feeling that she could have gone her whole life without feeling continuously sad, which is what I found the most resonating thing. The book could thus be taken as an emotional wake-up call in some ways.</p>
+
+           <p>This was my commute book on the train when I was 19 in 2022. Literally, I would be on the District Line to Gloucester Road or on my breaks at work and would literally have my head in the clouds reading this. I also remember reading it on a wall in front of my crush’s house at the time while waiting for him, not that the book is romantic at all.</p>
+
+           <p> It was also an easy read, so the fact that the book is fairly dense isn’t terrible. It’s not one of those books where it’s short but dense and takes a while to read and digest, thus it makes a good commute book because you can read it mindlessly if you choose to do so, and just take the book at surface level and read it for what it is. (This in itself could also be metaphorical for taking life as it is). Separately, I’ll admit there are times you get sick of the book just because I don’t think the character progresses emotionally too much, even if that’s the whole point of the story, but that’s personal opinion. It literally feels like she’s stuck in the past as well, something I can relate to a lot actually, and I didn’t even know it. I’ll also add that I didn’t expect it to resonate as much as it did reading it as a teenager on the train, but somehow it felt more relatable than I anticipated.</p>
+
+          <p> Anyways, I am rating it 4 out of 5, mainly because I think *The Handmaid’s Tale* by the same author is unbeatable and superior. Largely, I find the book’s message a little more forgettable. Although the message was tangible, it felt, to some degree, more like a storybook than anything else. This might be the point, but the message seems somewhat diminished and perhaps comes across as less significant.
+       </p>
           <!-- Expandable Summary Section -->
           <div class="expandable">
               <h3 onclick="toggleExpand(this)">+ Show Summary</h3>
@@ -561,7 +642,7 @@
             <!-- Toggle for Overview -->
             <button class="toggle-button" onclick="toggleOverview()">Show/Hide Overview</button>
             <div id="overview" class="toggle-content">
-                <p>Fundamentally, this book elucidates methods for manipulating individuals or avoiding manipulation. In the most constructive sense, it advocates the principle of "if you cannot surpass them, align with them." Remarkably, I would rate this highly, as it is directly applicable to real-world scenarios. The text is meticulously structured into 48 distinct sections, facilitating ease of comprehension.</p>
+                <p>Fundamentally, this book elucidates methods for manipulating individuals or avoiding manipulation. In the most constructive sense, literally advocating for the principle of "if you cannot beat them, join them." Remarkably, I would rate this highly, as it is directly applicable to real-world scenarios. The text is meticulously structured into 48 distinct sections, facilitating ease of comprehension.</p>
                 <p>Additionally, Greene integrates historical anecdotes with an in-depth exploration of human psychology, analyzing the motivations, fears, and desires that underpin human behavior. The intersection of historical context and contemporary psychological insight is particularly compelling, revealing enduring patterns of power dynamics. Although drawing on specific historical situations that may not translate well to contemporary scenarios, it is arguable that some tactics, if not all, don’t lose meaning or strategy even today.</p>
                 <p>A significant takeaway is Greene’s guidance on navigating intricate social environments, which could prove exceptionally valuable in professional settings as well as in managing overall reticence. The book further underscores the critical importance of strategic thinking and long-term planning—essential elements for the attainment of sustained goals. Despite the favorable review, it is imperative to recognize the ethical implications of the book, given that its advice often promotes self-serving and manipulative strategies.</p>
                 <p>However, The 48 Laws of Power doesn’t come without considerable debate. Plato highlights that “those who seek power are often those least suited to wield it,” pointing out the red flag regarding an individual’s suitability to hold power, which isn't alluded to in this book. Readers should approach this text with a discerning perspective as well as consider the ethical ramifications of employing these principles since, ultimately, the book advocates for manipulation where it benefits you. Ultimately, however, one is free to act according to their own judgment. As Niccolò Machiavelli (from The Prince) highlights, “the ends justify the means,” which, similar to Greene, reflects the pragmatic approach to power and manipulation.</p>
